@@ -1,0 +1,11 @@
+Hey <%= @movie.user.name %>,
+
+<%= @voting_user.name %> <%= @liked_or_hated %> your movie recommendation, '<%= @movie.title %>'.
+
+<% if @liked_or_hated == "liked" %>
+Another successful recommendation!  
+<% else %>
+Maybe try recommending another film? <%= new_movie_url %>  
+<% end %>
+
+MovieRama
