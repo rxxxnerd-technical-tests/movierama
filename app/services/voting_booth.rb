@@ -15,7 +15,7 @@ class VotingBooth
     set.add(@user)
     _update_counts
 
-    VoteMailer.vote_notification(@movie.id, @user.id, like_or_hate.to_s).deliver
+    VoteMailer.delay.vote_notification(@movie.id, @user.id, like_or_hate.to_s)
 
     self
   end
