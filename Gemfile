@@ -10,6 +10,9 @@ gem 'dotenv-rails', groups: [:development, :test]
 # Use unicorn as the app server
 gem 'unicorn'
 
+# Use sidekiq for OOB jobs
+gem 'sidekiq'
+
 # Productio nmonitoring
 gem 'newrelic_rpm'
 # Fixes Rails architecture kludges
